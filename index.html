@@ -1,13 +1,99 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Belajar Javascript Bersama PSI Ciputat</title>
+    <title>My Profile</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/ae63fe3ea1.js"></script>
+    <style>
+        .jumbotron {
+            color: white;
+            background-image: url("denon-dj.jpg");
+            background-size: cover;
+        }
+    </style>
 </head>
 <body>
-    <h1>Tentang situs web ini</h1>
-    <p>Situs web ini milik Bima. Dibuat pada tanggal 3 Agustus 2019.
-    Tujuan membuat situs web ini, untuk latihan saja. Situs ini belum mengudara,
-    karena masih tersimpan di komputer saya sendiri (lokal). Suatu saat nanti,
-    situs ini akan kusimpan (hosting) di sebuah server di internet. </p>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <a class="navbar-brand" href="index.html">
+            <i class="fas fa-headphones" style="border: 2px solid white; padding: 4px; border-radius:4px"></i>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Beranda <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="tentang.html">Tentang</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="hubungi.html">Hubungi</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="jumbotron">
+        <div class="col-md-6">
+            <h1 class="display-4">Lorem Ipsum</h1>
+            <p class="lead">Ini adalah lorem ipsum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate quia facere odio necessitatibus, sint architecto distinctio debitis quisquam sit dicta neque sequi placeat dolor amet error quas! Perspiciatis, ipsa ad?</p>
+            <hr class="my-4">
+            <p>Mau tau apa itu lorem ipsum? Tanya editor kompas.</p>
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </div>
+    </div>
+    <div class="container mb-5">
+        <div class="col-md-6 offset-md-6">
+            <form>
+                <h1>Daftar</h1>
+                <h6 class="mb-4">Gabung sebagai penggemar lorem ipsum</h6>
+                <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div class="form-group">
+                    <label for="exampleInputPassword1">Password</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="form-group form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary">Daftar</button>
+            </form>
+        </div>
+    </div>
+    <div class="bg-primary py-5">
+        <div class="container">
+            <div class="col-md-6 pb-5 bg-light">
+                <form>
+                    <h1>Masuk</h1>
+                    <h6>Sudah punya akun?</h6>
+                    <h6 class="mb-4">Masuk ke akun anda</h6>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                        <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                    </div>
+                    <div class="form-group form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Login</button>
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
